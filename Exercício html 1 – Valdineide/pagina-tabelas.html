@@ -6,12 +6,16 @@
     <title>pagina tabelas</title>
     <Style>
         td{
-            width: 30px;
-            height: 30px;
+            padding: 10px;
+            text-align: left;
+            width: 30px;  /* Define uma largura fixa para as células */
+            height: 30px;  /* Define uma altura fixa para as células */
         }
         th{
-            width: 30px;
-            height: 30px; 
+            padding: 10px;
+            text-align: left;
+            width: 30px;  /* Define uma largura fixa para as células */
+            height: 30px;  /* Define uma altura fixa para as células */
         }
     </Style>
 </head>
@@ -25,11 +29,14 @@
         </thead>
         <tbody>
             <tr>
-               <td></td> 
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                
-                
+                <td></td>
+                <td></td>
+                <td></td>    
             </tr>
             <tr>
                 
@@ -40,6 +47,68 @@
 
         </tfoot>
     </table>
-    
+    <hr>
+    <table border="1px">
+        <caption></caption>
+        <thead>
+            <tr>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>    
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>  
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+    <hr>
+    <table border="1px">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th colspan="5"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+                <td></td>    
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>  
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td></td>  
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
 </body>
 </html>
