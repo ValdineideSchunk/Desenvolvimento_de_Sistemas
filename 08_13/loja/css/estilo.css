@@ -1,72 +1,83 @@
-*{
+/* Padronizando carregamento */
+* {
     padding: 0;
     margin: 0;
     outline: 0;
 }
-/*configurando pagina inicial*/
-body{
+
+/* Configurando corpo da página */
+body {
     background-color: #f3f3f3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
 }
-#navegacao{
+
+/* Configurando Menu */
+#navegacao {
     background-color: white;
     border-bottom: 3px solid #d8d8d8;
     height: 45px;
 }
 
-/*configurando menu*/
-#areamenu{
-   width: 720px;
-   margin: 0 auto;
+#area_menu {
+    width: 720px;
+    margin: 0 auto;
 }
 
-#logo{
+#logo {
     float: left;
 }
-.azul{
-    color: rgb(34, 83, 189);
+
+.azul {
+    color: #1e90ff;
 }
 
-#menu{
+#menu {
     float: right;
     padding: 10px 0;
 }
-#menu a{
+
+#menu a {
     text-decoration: none;
 }
-#menu a:link,#menu a :visited{
+
+#menu a:link,
+#menu a:visited {
     color: #4682b4;
 }
-#menu a:hover{
+
+#menu a:hover {
     color: white;
-    background-color: blue;
+    background-color: #000080;
 }
 
-/* Area principal dos posts*/
-
-#area_principal{
+/* Area principal dos posts */
+#area_principal {
     width: 720px;
     margin: 50px auto 20px auto;
 }
-.postagem{
+
+.postagem {
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
 }
-h2{
+
+h2 {
     color: #87cefa;
 }
-.data_postagem{
+
+.data_postagem {
     font-size: 14px;
     border-bottom: 1px solid #4682b4;
     margin-bottom: 15px;
     padding-bottom: 12px;
-    display: block; 
+    display: block;
 }
+
 .img_postagem{
     max-width: 100%;
-    border-radius: 25px;
+    border-radius: 55px;
 }
 .autor{
     border-top: 3px solid #483d88;
@@ -75,25 +86,29 @@ h2{
     display: block;
 }
 
-/* Antivirus*/
+/* Antivirus */
 .titulo_antivirus{
-    color: rgb(25, 85, 65);
+    color: #6c966c;
     text-align: center;
 }
+
 .img_antivirus{
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
+
 .container{
     display: flex;
     justify-content: space-between;
 }
+
 .antivirus{
     width: 30%;
     height: 200px;
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
 }
+
 #avast{
     background-image: url('../img/avast.png');
 }
