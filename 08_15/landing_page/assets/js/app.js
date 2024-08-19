@@ -1,9 +1,9 @@
 // Hamburger menu selections
 
 // scroll-to-top selection
-<script>
-     var lightbox = new SimpleLightbox(".stars-gallery a");
-</script>
+
+
+
 // Hamburger menu functionality
 
 // Theme switcher selection
