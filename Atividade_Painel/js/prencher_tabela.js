@@ -1,5 +1,9 @@
 'use strict';
 
+
+
+
+
 let aulas = [
     {
         "id": 1300,
@@ -36,39 +40,43 @@ let aulas = [
     }
 ]
 
-let tabela = document.getElementById('tabela');
+function abreviaData(dataHora) {
+    const agora = new Date(dataHora);
+    return agora.toLocaleTimeString('pt-br', { hour: '2-digit', minute: '2-digit' });
+}
 
+
+
+let tabela = document.getElementById('tabela');
 let axibir = '';
 let isBlue = false; // Variável para alternar as cores
 
 for (let aula of aulas) {
 
-    //Formata hora de inicio
-    const horaInicio = new Date(aula.data_hora_inicio);
-    const horaMinutosSegundosInicio = horaInicio.toLocaleTimeString('pt-br', { hour: '2-digit', minute: '2-digit',});
+    //Formata hora de inicio e captura o retorno da função
+    const horaMinutosSegundosInicio = abreviaData(aula.data_hora_inicio);
 
-    //Formata hora fim
-    const horaFim = new Date(aula.data_hora_fim);
-    const horaMinutosSegundosFim = horaFim.toLocaleTimeString('pt-br', { hour: '2-digit', minute: '2-digit',});
+    //Formata hora de Fim e captura o retorno da função
+    const horaMinutosSegundosFim = abreviaData(aula.data_hora_fim);
 
     //Abreviando nome dos instrutores
     let arrayNome = aula.instrutor.split(' ');
-    let primeiroUltimo = arrayNome[0] + ' ' + arrayNome[arrayNome.length-1];
+    let primeiroUltimo = arrayNome[0] + ' ' + arrayNome[arrayNome.length - 1];
     console.log(primeiroUltimo);
-    
+
     // Abreviando o nome da unidade curicular
     let pieces = aula.unidade_curricular.split(' '); //split pega uma string e separa em arrays de string
-    pieces.splice(-2,2); // splice remove elemento de um array
-    let abrev = aula.unidade_curricular.substring(0,4); // retorna um pedaço de uma string
-    
+    pieces.splice(-2, 2); // splice remove elemento de um array
+    let abrev = aula.unidade_curricular.substring(0, 4); // retorna um pedaço de uma string
+
     //Abreviando ambiente
     let salas = aula.ambiente.split('-');
-    salas.splice(0,2);
+    salas.splice(0, 2);
     let ambiente = salas.join('-');
 
-     // Alterna a cor da linha e a cor da letra
-     let corLinha = isBlue ? 'style="background-color: #3d8ac9; color: #FFFFFF;"' : 'style="background-color: #FFFFFF; color: #000000;"';
-     isBlue = !isBlue; // Inverte a cor para a próxima linha
+    // Alterna a cor da linha e a cor da letra
+    let corLinha = isBlue ? 'style="background-color: #3d8ac9; color: #FFFFFF;"' : 'style="background-color: #FFFFFF; color: #000000;"';
+    isBlue = !isBlue; // Inverte a cor para a próxima linha
 
 
     axibir += '<tr ' + corLinha + '>';
@@ -76,7 +84,7 @@ for (let aula of aulas) {
     axibir += '<td style="padding-left: 15px;">' + horaMinutosSegundosFim + '</td>';
     axibir += '<td style="padding-left: 90px;">' + aula.turma + '</td>';
     axibir += '<td style="padding-left: 100px;">' + primeiroUltimo + '</td>';
-    axibir += '<td style="padding-left: 100x;">' + abrev+'. '+pieces.pop() + '</td>';
+    axibir += '<td style="padding-left: 100x;">' + abrev + '. ' + pieces.pop() + '</td>';
     axibir += '<td style="padding-left: 20px;">' + ambiente + '</td>';
     axibir += '</tr>';
 }
