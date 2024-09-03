@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel</title>
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <div id="cabecalho">
         <span id="saudacao"></span>
         <span id="relogio"></span>
     </div>
+    <table id="tabela">
+        <thead>
+            <tr id="cabecalhoTabela">
+                <th>Início</th>
+                <th>Fim</th>
+                <th>Turma</th>
+                <th>Instrutor</th>
+                <th>Unidade Curricular</th>
+                <th>Ambiente</th>
+            </tr>
+        </thead> 
+    </table>
+    <div id="anuncios"></div>
+    <script src="./js/imagens.js"></script>
     <script src="./js/relogio.js"></script>
     <script src="./js/saudacao.js"></script>
+    <script src="./js/prencher_tabela.js"></script>
 </body>
 </html>

@@ -1,19 +1,19 @@
 'use strict';
 
-// Em javascript um objeto é declarado com chaves {} sua caracteristica
-//é possuir chave e valor assim como variaveis as chaves devem seguir um 
-//padrão de nomenclaura
+// E, javascript um objeto é declarado com chaves {} sua caracteristica é possui chave e valor
+// Assim como variveis as chaves devem seguir um padrão de nomenclatura
 let objeto = {
-nome:'Ramon de Holanda',
-idade:18,
-cidade:'Serra',
-'data de hoje': '29/08' // Nao se deve declarar uma chave assim mesmo que seja possivel
+    nome:'Ramon de Holanda',
+    idade:18,
+    cidade:'Serra',
+    'data de hoje': '29/08' //Não se deve declarar uma chave assim mesmo que seja possivel
 };
 
 console.log(objeto['nome']);
 console.log(objeto.cidade);
+console.log(objeto['data de hoje']);
 
-// JAIN: Javascript Object Notation
+//JSON: JavaScript Object Notation
 
 let aulas = [
     {
@@ -50,6 +50,5 @@ let aulas = [
         "chave": null
     }
 ]
-
 // Acessando a primeira posição do array e o atributo
-console.log(aulas[0].data_hora_inicio);
+console.log(aulas[0].ambiente);

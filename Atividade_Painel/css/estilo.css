@@ -1,7 +1,55 @@
 
 
-
-#cabecalho{
-    width: 100%;
-    background-color: rgb(33, 33, 177);
+#cabecalho {
+    background-color: #3d8ac9;
+    color: white;
+    padding: 15px 50px; /* Adiciona 50px de espaço à esquerda e à direita */
+    width: 100%; /* Define a largura da div para 100% da largura da tela */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between; /* Distribui o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
 }
+
+#tabela {
+    padding: 15px;
+    width: 80%; /* Faz a tabela ocupar 100% da largura do contêiner pai */
+    border-collapse: collapse; /* Remove espaços entre bordas das células */
+    margin: 5px 0; /* Adiciona uma margem superior e inferior */
+}
+
+#cabecalhoTabela {
+    background-color: rgb(69, 104, 195);
+    color: white; 
+    width: 100%; 
+}
+
+#tabelainformacoes{
+    background-color: rgb(255, 255, 255);
+    color: rgb(18, 10, 105); 
+    width: 100%;
+}
+
+
+
+
+
+
+#anuncios {
+    width: 20%; /* Define a largura do contêiner */
+    position: absolute; /* Remove o contêiner do fluxo normal do documento */
+    top: 80px; /* Alinha o contêiner a 50px do topo da tela */
+    right: 0; /* Alinha o contêiner à direita da tela */
+    display: flex;
+    flex-direction: column; /* Empilha as imagens verticalmente */
+    align-items: center; /* Centraliza as imagens horizontalmente dentro do contêiner */
+    padding: 10px; /* Adiciona um padding interno, se necessário */
+    box-sizing: border-box; /* Inclui padding na largura total do contêiner */
+}
+
+#anuncios img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+    margin-bottom: 10px; /* Adiciona um espaçamento entre as imagens */
+}
+
