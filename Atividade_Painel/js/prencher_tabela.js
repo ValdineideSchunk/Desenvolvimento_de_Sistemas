@@ -54,10 +54,10 @@ let isBlue = false; // Variável para alternar as cores
 for (let aula of aulas) {
 
     //Formata hora de inicio e captura o retorno da função
-    const horaMinutosSegundosInicio = abreviaData(aula.data_hora_inicio);
+    const horaMinutosInicio = abreviaData(aula.data_hora_inicio);
 
     //Formata hora de Fim e captura o retorno da função
-    const horaMinutosSegundosFim = abreviaData(aula.data_hora_fim);
+    const horaMinutosFim = abreviaData(aula.data_hora_fim);
 
     //Abreviando nome dos instrutores
     let arrayNome = aula.instrutor.split(' ');
@@ -80,8 +80,8 @@ for (let aula of aulas) {
 
 
     axibir += '<tr ' + corLinha + '>';
-    axibir += '<td style="padding-left: 10px;">' + horaMinutosSegundosInicio + '</td>';
-    axibir += '<td style="padding-left: 15px;">' + horaMinutosSegundosFim + '</td>';
+    axibir += '<td style="padding-left: 10px;">' + horaMinutosInicio + '</td>';
+    axibir += '<td style="padding-left: 15px;">' + horaMinutosFim + '</td>';
     axibir += '<td style="padding-left: 90px;">' + aula.turma + '</td>';
     axibir += '<td style="padding-left: 100px;">' + primeiroUltimo + '</td>';
     axibir += '<td style="padding-left: 100x;">' + abrev + '. ' + pieces.pop() + '</td>';
