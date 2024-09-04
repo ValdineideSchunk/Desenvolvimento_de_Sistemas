@@ -1,4 +1,23 @@
-
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--bs-body-font-family);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    caption-side: bottom;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
 
 #cabecalho {
     background-color: #3d8ac9;
@@ -32,12 +51,7 @@
     width: 100%;
 }
 
-
-
-
-
-
-#anuncios {
+#lateral {
     width: 20%; /* Define a largura do contêiner */
     position: absolute; /* Remove o contêiner do fluxo normal do documento */
     top: 80px; /* Alinha o contêiner a 50px do topo da tela */
@@ -49,8 +63,14 @@
     box-sizing: border-box; /* Inclui padding na largura total do contêiner */
 }
 
-#anuncios img {
+#lateral img {
     max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
     margin-bottom: 10px; /* Adiciona um espaçamento entre as imagens */
 }
+
+
+
+
+
+
 
